@@ -12,11 +12,8 @@ wget \
     --wait=20 \
     --random-wait \
     --limit-rate=30K \
+    --continue \
     --user-agent='Mozilla/5.0 (Windows NT 6.1; rv:27.3) Gecko/20130101 Firefox/27.3' \
     -e robots=off \
     --domains "$1" \
     "$1"
-
-
-
-
