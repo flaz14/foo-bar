@@ -60,8 +60,8 @@ function pack_configuration_files() {
 	# all paths will start from '.kde' 
 	cd ~
 	local paths="$(find "$kde_home_directory" \
-			-name "*$pattern*"        \
-			-print0                   \
+			-path "*$pattern*"                \
+			-print0                           \
 			2>/dev/null)"
 	if [[ -z "$paths" ]]; then
 		echo "Nothing found for $pattern. Abort."
@@ -71,8 +71,7 @@ function pack_configuration_files() {
 	# separators (NULL-characters cannot be saved in Bash 
 	# variable, so we cannot reuse $paths)
 	find "$kde_home_directory" \
-	-type f                    \
-	-name "*$pattern*"         \
+	-path "*$pattern*"         \
 	-print0                    \
 	2>/dev/null                \
 	| tar --create --null --files-from - 
