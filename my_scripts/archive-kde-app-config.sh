@@ -60,7 +60,6 @@ function pack_configuration_files() {
 	# all paths will start from '.kde' 
 	cd ~
 	local paths="$(find "$kde_home_directory" \
-			-type f                   \
 			-name "*$pattern*"        \
 			-print0                   \
 			2>/dev/null)"
