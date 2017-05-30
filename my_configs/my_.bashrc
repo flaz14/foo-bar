@@ -29,22 +29,11 @@ alias ll='ls -l --all --human-readable --group-directories-first'
 # by first argument, output will be put to stdout)
 alias dos-to-linux='iconv --from-code=cp866 --to-code=utf8'
 
-# navigate up to the n-th directory in less-typing manner
-alias cd.='cd ..'
-alias cd..='cd ../..'
-alias cd...='cd ../../..'
-alias cd....='cd ../../../..'
-alias cd.....='cd ../../../../..'
-
 # pretty print XML file
 alias cat-xml='xmllint --format "$1"'
 
 # print web page by URL
 alias cat-http='wget -q -O - "$1"'
-
-alias pastebin="echo 'This is a stub for /usr/local/bin/pastebin \
-(comes from mintsystem package) in order to prevent accident posts \
-on paste.linuxmint.com.'"
 
 # Lists all opened TCP and UDP ports.
 function ls-tcpudp {
@@ -84,3 +73,4 @@ function find-pid-by-used-port {
 		echo "$candidate_pid"
 	done
 }
+

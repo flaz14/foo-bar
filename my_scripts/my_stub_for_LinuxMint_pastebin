@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo 'This is a stub for /usr/local/bin/pastebin 
+(comes from `mintsystem` package) in order to prevent 
+accident publishing of private files or other sensitive
+data on paste.linuxmint.com.'
