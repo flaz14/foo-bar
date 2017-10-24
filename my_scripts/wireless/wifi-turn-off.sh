@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rfkill block wifi
+nmcli nm wifi off

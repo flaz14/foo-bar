@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rfkill unblock wifi
+nmcli nm wifi on
