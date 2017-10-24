@@ -31,8 +31,8 @@ table_heading="$(echo "$nm_status" | head --lines=1)"
 
 table_content="$(echo "$nm_status" | tail --lines=1)"
 
-# The output of `nmcli status` command is a table. Items in the table are arranged with aid of spaces. For robust 
-# verifying of WiFi's status we need to eliminate extra spaces. `xargs` helps us to achieve this (as well as remove 
+# The output of `nmcli status` command is a table. Cells in the table are arranged with aid of spaces. For robust 
+# verifying WiFi's status we need to eliminate extra spaces. `xargs` helps us to achieve this (as well as remove 
 # whitespaces in the middle of the string; however, that doesn't matter in our script).
 #
 # You can find more information about this trick in the answer of @makevoid:
